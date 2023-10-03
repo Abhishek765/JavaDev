@@ -26,7 +26,11 @@ class B extends A {
     }
 
     public B(int num) {
-        super(num); // this will call the corresponding parameterized constructor from A
+        /**
+         * it will call the constructor of same class (in this case class B default
+         * constructor)
+         */
+        this();
         System.out.println("in B int");
     }
 
@@ -35,8 +39,8 @@ class B extends A {
 public class SuperAndThis {
 
     public static void main(String[] args) {
-        B b = new B();
-        // B b = new B(5);
+        // B b = new B();
+        B b = new B(5);
     }
 
 }
