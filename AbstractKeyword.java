@@ -37,7 +37,8 @@ class Honda extends Bike { // ! Concrete class
 public class AbstractKeyword {
     public static void main(String[] args) {
 
-        Bike hondaBike = new Honda(); // ! We can't create objects of abstract classes
+        Bike hondaBike = new Honda(); // ! We can't create objects of abstract classes -> Here Honda class is concrete
+                                      // ! class which inherits abstract class Bike
         hondaBike.drive();
         hondaBike.fly();
     }
