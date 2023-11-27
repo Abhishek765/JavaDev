@@ -1,3 +1,5 @@
+import java.lang.FunctionalInterface;
+
 /**
  * * An Interface that contains exactly one abstract method is known as
  * functional interface.
@@ -16,7 +18,7 @@ interface A {
 // }
 // }
 
-public class FunctionalInterface {
+public class FunctionalInterfaceExample {
 
     public static void main(String[] args) {
         // Using Anonymous inner class
