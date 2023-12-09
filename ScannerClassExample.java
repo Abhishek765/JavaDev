@@ -13,6 +13,11 @@ public class ScannerClassExample {
         int num = sc.nextInt();
         System.out.println(num);
 
+        // close the scanner
+        System.out.println("Closing Scanner...");
+        sc.close();
+        System.out.println("Scanner Closed.");
+
     }
 
 }
