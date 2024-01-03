@@ -8,14 +8,17 @@ public class SortingExample {
     public static void main(String[] args) {
 
         // Swapping based on the last digit
-        Comparator<Integer> com = new Comparator<Integer>() {
+        // Comparator<Integer> com = new Comparator<Integer>() {
 
-            @Override
-            public int compare(Integer a, Integer b) {
-                return a % 10 > b % 10 ? 1 : -1; // 1 -> swap, -1 -> don't swap
-            }
+        // @Override
+        // public int compare(Integer a, Integer b) {
+        // return a % 10 > b % 10 ? 1 : -1; // 1 -> swap, -1 -> don't swap
+        // }
 
-        };
+        // };
+
+        // Using lambda expression
+        Comparator<Integer> com = (a, b) -> a % 10 > b % 10 ? 1 : -1; // 1 -> swap, -1 -> don't swap
 
         List<Integer> nums = new ArrayList<>();
         nums.add(43);
